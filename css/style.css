@@ -60,6 +60,10 @@ li{
 }
 
 /* MAIN */
+
+.img1-grid{
+    display: none;
+}
 h2{
     font-family: 'Shadows Into Light', sans-serif;
     margin: 10px;
@@ -85,6 +89,9 @@ p{
     letter-spacing: 2px;
     text-align: justify;
     text-indent: 2px;
+    max-width: 630px;
+    margin: auto;
+    font-size: 14px;
 }
 
 .caixa{
@@ -104,3 +111,67 @@ p{
     font-family: 'Shadows Into Light', sans-serif;
     font-size: 20pt;
  }
+
+.none{
+    display: none;
+}
+
+ 
+ 
+ /* PARA TABLETS */
+
+ @media screen and (min-width:768px) {
+     .container{
+         display: grid;
+         grid-template-columns: 1fr 3fr;
+         grid-template-areas: 
+         'header header header'
+         'sidenav content content'
+         'sidenav content content'
+         'footer footer footer'
+         ;
+   }
+   
+   .header{grid-area: header;}
+   .content{grid-area: content;}
+   .sidenav{grid-area: sidenav;}
+
+   .ul{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .img1-grid{
+    display: block;
+    grid-area: img;
+    width: 550px;
+    margin: auto;
+   }
+
+   .caixa{
+    display: none;
+   }
+
+   .footer{
+    grid-area: footer;
+    background-color: black;
+   }
+
+   .footer > p {
+    text-align: center;
+    color: white;
+    padding: 15px;
+   }
+
+   .none{
+    display: block;
+   }
+
+   li{
+    margin-bottom: 80px;
+   }
+
+   h2,h3{
+    letter-spacing: 4px;
+   }
+}
