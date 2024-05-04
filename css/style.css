@@ -78,7 +78,7 @@ h2{
     margin: auto;
 }
 .imgs{
-    width: 300px;
+    width: 500px;
     display: block;
     margin: auto;
     border-radius: 3px;
@@ -116,8 +116,24 @@ p{
     display: none;
 }
 
- 
- 
+.footer{
+    display: none;
+}
+
+.grid-paragrafo{
+    display: none;
+}
+.sumir{
+    display: none;
+}
+.size{
+    display: none;
+}
+
+.grid-paragrafo-tablet{
+    display: none;
+} 
+
  /* PARA TABLETS */
 
  @media screen and (min-width:768px) {
@@ -153,6 +169,7 @@ p{
    }
 
    .footer{
+    display: block;
     grid-area: footer;
     background-color: black;
    }
@@ -174,6 +191,11 @@ p{
    h2,h3{
     letter-spacing: 4px;
    }
+   
+   .grid-paragrafo-tablet{
+    display: block;
+   }
+
 }
 
 /* PARA TELAS MAIORES */
@@ -185,5 +207,39 @@ p{
 
    .none{
     display: none;
+   }
+
+   .tamanho{
+    display: grid;
+    grid-row: span 4;
+   }
+   .img1-grid{
+    display: none;
+   }
+   .grid-paragrafo{
+    display: block;
+   }
+   .sumir{
+    display: block;
+   }
+   .radius{
+    width: 400px;
+    border-radius: 10px;
+    grid-auto-flow: dense;
+    text-align: end;
+   }
+   .size{
+    display: block;
+    width: 500px;
+    margin: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   }
+   .grid-paragrafo-tablet{
+    display: none;
+   }
+
+   .grid-telas-maiores{
+    width: 200px;
    }
 }
