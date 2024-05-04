@@ -175,3 +175,15 @@ p{
     letter-spacing: 4px;
    }
 }
+
+/* PARA TELAS MAIORES */
+
+@media screen and (min-width:992px){
+   .grid-2{
+     width: 200px;
+   }
+
+   .none{
+    display: none;
+   }
+}
