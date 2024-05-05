@@ -78,18 +78,18 @@ h2{
     margin: auto;
 }
 .imgs{
-    width: 500px;
+    width: 300px;
     display: block;
     margin: auto;
     border-radius: 3px;
 }
-p{
+.p-mobile{
     padding: 10px;
     line-height: 30px;
     letter-spacing: 2px;
     text-align: justify;
     text-indent: 2px;
-    max-width: 630px;
+    width: 360px;
     margin: auto;
     font-size: 14px;
 }
@@ -105,7 +105,7 @@ p{
 }
 .caixa > p{
     font-family: 'Shadows Into Light', sans-serif;
-    font-size: 20pt;
+    font-size: 20px;
 }
  h3{
     font-family: 'Shadows Into Light', sans-serif;
@@ -224,9 +224,10 @@ p{
    }
    .radius{
     width: 400px;
-    border-radius: 10px;
-    grid-auto-flow: dense;
-    text-align: end;
+    border-radius: 30%;
+    display: flex;
+    flex: 1 0 400px;
+    box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, 0.415);
    }
    .size{
     display: block;
@@ -234,6 +235,7 @@ p{
     margin: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, 0.415);
    }
    .grid-paragrafo-tablet{
     display: none;
@@ -241,5 +243,16 @@ p{
 
    .grid-telas-maiores{
     width: 200px;
+   }
+
+   .imgs{
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, 0.415);
+   }
+
+   .gif1{
+    width: 400px;
+    box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, 0.415) ;
    }
 }
